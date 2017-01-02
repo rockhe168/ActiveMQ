@@ -14,8 +14,11 @@ public class MessageConsumerImpl implements IMessageConsumer{
     private static final String USERNAME = ActiveMQConnection.DEFAULT_USER;
     //默认的链接秘密
     private static final String PASSWORD = ActiveMQConnection.DEFAULT_PASSWORD;
+
+    //active mq 链接地址
+    private static final String BROKEURL = "failover://tcp://192.168.2.106:61616";
     //默认的链接地址
-    private static final String BROKEURL = ActiveMQConnection.DEFAULT_BROKER_URL;
+    //private static final String BROKEURL = ActiveMQConnection.DEFAULT_BROKER_URL;
 
     //连接工厂
     ConnectionFactory connectionFactory;
